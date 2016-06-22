@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Toast.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,15 @@
     
 }
 
+- (IBAction)onClick:(UIButton *)sender
+{
+    [[Toast toast] makeText:@"这是一个toast.乃我创建，前无古人后无来者"];
+}
 
+- (IBAction)windowCount:(UIButton *)sender
+{
+    NSLog(@"WindowCount = %ld",[UIApplication sharedApplication].windows.count);
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -31,3 +40,6 @@
 }
 
 @end
+
+
+

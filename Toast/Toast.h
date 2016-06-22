@@ -10,8 +10,20 @@
 
 @interface Toast : UIWindow
 
+/**
+ *  创建一个Toast
+ *
+ *  @return 返回当前toast
+ */
 + (instancetype)toast;
 
+/**
+ *  显示toast
+ *
+ *  @param text 需要显示的文字
+ */
 - (void)makeText:(NSString *)text;
+
+
 
 @end
