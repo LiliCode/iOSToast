@@ -10,7 +10,8 @@
 
 @interface Toast : UIWindow
 
++ (instancetype)toast;
 
-+ (void)makeText:(NSString *)text;
+- (void)makeText:(NSString *)text;
 
 @end
