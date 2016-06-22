@@ -16,6 +16,7 @@
 		22F0EBCB1D1AAAEF00FBC40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F0EBC91D1AAAEF00FBC40F /* LaunchScreen.storyboard */; };
 		22F0EBD61D1AAAEF00FBC40F /* ToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0EBD51D1AAAEF00FBC40F /* ToastTests.m */; };
 		22F0EBE11D1AAAF000FBC40F /* ToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0EBE01D1AAAF000FBC40F /* ToastUITests.m */; };
+		22F0EBF01D1AAB4300FBC40F /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0EBEF1D1AAB4300FBC40F /* Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		22F0EBDC1D1AAAF000FBC40F /* ToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F0EBE01D1AAAF000FBC40F /* ToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUITests.m; sourceTree = "<group>"; };
 		22F0EBE21D1AAAF000FBC40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F0EBEE1D1AAB4300FBC40F /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		22F0EBEF1D1AAB4300FBC40F /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 		22F0EBB71D1AAAEF00FBC40F /* Toast */ = {
 			isa = PBXGroup;
 			children = (
+				22F0EBEE1D1AAB4300FBC40F /* Toast.h */,
+				22F0EBEF1D1AAB4300FBC40F /* Toast.m */,
 				22F0EBBB1D1AAAEF00FBC40F /* AppDelegate.h */,
 				22F0EBBC1D1AAAEF00FBC40F /* AppDelegate.m */,
 				22F0EBBE1D1AAAEF00FBC40F /* ViewController.h */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F0EBF01D1AAB4300FBC40F /* Toast.m in Sources */,
 				22F0EBC01D1AAAEF00FBC40F /* ViewController.m in Sources */,
 				22F0EBC61D1AAAEF00FBC40F /* Toast.xcdatamodeld in Sources */,
 				22F0EBBD1D1AAAEF00FBC40F /* AppDelegate.m in Sources */,
@@ -420,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lili.Toast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lili.Toast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
